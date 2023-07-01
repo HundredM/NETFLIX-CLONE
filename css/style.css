@@ -1,0 +1,17 @@
+@import'/css/variable.css';
+
+.bg-div{
+    background-image: url("/images/IMG-20230617-WA0011.jpg");
+}
+#head-contents{
+    margin: 12rem 8rem;
+    padding-bottom: 12rem;
+}
+
+
+#email-box{
+    flex: 4;
+}
+#start-btn{
+    flex: 2;
+}
