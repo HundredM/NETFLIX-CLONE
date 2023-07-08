@@ -30,21 +30,31 @@ img.addEventListener("mouseover", onHover);
 img.addEventListener("mouseout", mouseout);
 
 function loadData(){
-    const div = document.createElement("div");
-    const lbl = document.createElement("label");
+     const div = document.createElement("div");
+    // const lbl = document.createElement("label");
     const p = document.createElement("p");
     const p2 = document.createElement("p"); //
 
-    fetch('https://jsonplaceholder.typicode.com/todos/1')
+    fetch('https://jsonplaceholder.typicode.com/photos')
       .then(response => response.json())
       .then((json)=>{
-        p.innerText=json["title"];
-        p2.innerText= json['completed'];///
-        lbl.innerText= "Title of work";
-        div.appendChild(lbl);
-        div.appendChild(p);
-        div.appendChild(p2);//
-        section.appendChild(div);
+        // p.innerText=json["title"];
+        // p2.innerText= json['completed'];///
+        // lbl.innerText= "Title of work";
+        // div.appendChild(lbl);
+        // div.appendChild(p);
+        // div.appendChild(p2);//
+        // section.appendChild(div);
+      for(let i=0; i<2000; i++){
+    
+     let img1 = document.createElement("img");
+     img1.src = json[i]["url"];
+     img1.style.width="200px";
+     img1.className ="shadow rounded border p-3 m-2";
+     div.appendChild(img1);
+}
+     // console.log(json);
+    section.appendChild(div);
       })
 }
 
