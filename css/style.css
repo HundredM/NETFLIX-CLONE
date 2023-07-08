@@ -1,13 +1,18 @@
-@import'/css/variable.css';
+@import "/css/variables.css";
 
 .bg-div{
-    background-image: url("/images/IMG-20230617-WA0011.jpg");
+    background-image: url("/images/BG.jpg");
 }
+
 #head-contents{
     margin: 12rem 8rem;
     padding-bottom: 12rem;
 }
 
+#form-email{
+    margin-bottom: 12rem;
+
+}
 
 #email-box{
     flex: 4;
